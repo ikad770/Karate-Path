@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Karate-inspired color palette - dark, bold, traditional */
+    --background: 0 0% 4%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 95%;
+
+    /* Primary - Deep crimson red (traditional Japanese) */
+    --primary: 0 72% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - Dark charcoal */
+    --secondary: 0 0% 14%;
+    --secondary-foreground: 0 0% 95%;
+
+    /* Muted */
+    --muted: 0 0% 16%;
+    --muted-foreground: 0 0% 65%;
+
+    /* Accent - Gold/amber for highlights */
+    --accent: 45 90% 50%;
+    --accent-foreground: 0 0% 5%;
+
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders */
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 72% 45%;
+
+    --radius: 0.5rem;
+
+    /* Belt colors */
+    --belt-white: 0 0% 100%;
+    --belt-yellow: 48 100% 50%;
+    --belt-orange: 30 100% 50%;
+    --belt-green: 120 60% 35%;
+    --belt-blue: 220 80% 50%;
+    --belt-brown: 30 60% 30%;
+    --belt-black: 0 0% 0%;
+
+    /* Category colors */
+    --category-kihon: 200 80% 50%;
+    --category-kata: 280 70% 50%;
+    --category-kumite: 0 70% 50%;
+    --category-dojo: 45 90% 50%;
+    --category-terms: 160 60% 45%;
+    --category-exam: 0 0% 100%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(0 72% 35%) 0%, hsl(0 0% 8%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 12%) 0%, hsl(0 0% 6%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(45 90% 50%) 0%, hsl(30 90% 45%) 100%);
+    --gradient-belt: linear-gradient(90deg, transparent 0%, hsl(0 72% 45% / 0.3) 50%, transparent 100%);
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 6%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 0 72% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 12%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 0 72% 45%;
+
+    /* Animation durations */
+    --duration-fast: 150ms;
+    --duration-normal: 300ms;
+    --duration-slow: 500ms;
+
+    /* Japanese pattern overlay opacity */
+    --pattern-opacity: 0.03;
+  }
+
+  .dark {
+    /* Already dark theme by default */
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    direction: rtl;
+  }
+
+  body {
+    @apply bg-background text-foreground font-heebo antialiased;
+    font-feature-settings: "kern" 1;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-secondary;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/30 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/50;
+  }
+}
+
+@layer components {
+  /* Japanese seigaiha wave pattern */
+  .pattern-seigaiha {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='40' viewBox='0 0 80 40'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M0 40a20 20 0 0 1 20-20 20 20 0 0 1 20 20H0zm40 0a20 20 0 0 1 20-20 20 20 0 0 1 20 20H40zm-20-20a20 20 0 0 1 20-20 20 20 0 0 1 20 20H20z'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  /* Asanoha hemp leaf pattern */
+  .pattern-asanoha {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23ffffff' fill-opacity='0.03' d='M12 0l12 12-12 12L0 12 12 0zm0 2.83L2.83 12 12 21.17 21.17 12 12 2.83z'/%3E%3C/svg%3E");
+  }
+
+  /* Belt stripe styling */
+  .belt-stripe {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .belt-stripe::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 6px;
+    background: currentColor;
+  }
+
+  /* Glow effects */
+  .glow-primary {
+    box-shadow: 0 0 30px hsl(0 72% 45% / 0.3);
+  }
+
+  .glow-accent {
+    box-shadow: 0 0 30px hsl(45 90% 50% / 0.3);
+  }
+
+  /* Text gradients */
+  .text-gradient-primary {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(0 72% 55%) 0%, hsl(0 72% 35%) 100%);
+  }
+
+  .text-gradient-accent {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(45 90% 55%) 0%, hsl(30 80% 50%) 100%);
+  }
+
+  /* Card hover effects */
+  .card-hover {
+    @apply transition-all duration-300;
+  }
+
+  .card-hover:hover {
+    @apply transform -translate-y-1;
+    box-shadow: 0 20px 40px -15px hsl(0 0% 0% / 0.5);
+  }
+
+  /* Progress bar styling */
+  .progress-karate {
+    @apply h-2 rounded-full bg-secondary overflow-hidden;
+  }
+
+  .progress-karate-fill {
+    @apply h-full rounded-full transition-all duration-500;
+    background: linear-gradient(90deg, hsl(0 72% 45%) 0%, hsl(0 72% 55%) 100%);
+  }
+
+  /* Japanese brush stroke effect */
+  .brush-stroke {
+    position: relative;
+  }
+
+  .brush-stroke::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent 0%, hsl(0 72% 45%) 20%, hsl(0 72% 45%) 80%, transparent 100%);
+    border-radius: 2px;
+  }
+}
+
+@layer utilities {
+  /* RTL utilities */
+  .flip-rtl {
+    transform: scaleX(-1);
+  }
+
+  /* Animation utilities */
+  .animate-fade-in {
+    animation: fadeIn var(--duration-normal) ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp var(--duration-normal) ease-out;
+  }
+
+  .animate-slide-right {
+    animation: slideRight var(--duration-normal) ease-out;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn var(--duration-normal) ease-out;
+  }
+
+  .animate-pulse-glow {
+    animation: pulseGlow 2s ease-in-out infinite;
+  }
+
+  /* Stagger delays for animations */
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+  .delay-400 { animation-delay: 400ms; }
+  .delay-500 { animation-delay: 500ms; }
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { 
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideRight {
+  from { 
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from { 
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to { 
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 20px hsl(0 72% 45% / 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px hsl(0 72% 45% / 0.5);
+  }
+}
+
+/* Prose styling for markdown content */
+.prose-karate {
+  @apply text-foreground/90;
+}
+
+.prose-karate h1 {
+  @apply text-3xl font-bold text-foreground mb-6;
+}
+
+.prose-karate h2 {
+  @apply text-2xl font-bold text-foreground mt-8 mb-4;
+}
+
+.prose-karate h3 {
+  @apply text-xl font-semibold text-foreground mt-6 mb-3;
+}
+
+.prose-karate p {
+  @apply mb-4 leading-relaxed;
+}
+
+.prose-karate ul {
+  @apply mb-4 pr-6;
+}
+
+.prose-karate li {
+  @apply mb-2;
+}
+
+.prose-karate strong {
+  @apply text-accent font-semibold;
+}
+
+.prose-karate code {
+  @apply bg-secondary px-2 py-1 rounded text-sm;
+}
