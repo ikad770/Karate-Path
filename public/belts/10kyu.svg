@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 120" role="img" aria-label="10級">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#F8FAFC" stop-opacity="0.95"/>
+      <stop offset="0.5" stop-color="#F8FAFC" stop-opacity="1"/>
+      <stop offset="1" stop-color="#F8FAFC" stop-opacity="0.9"/>
+    </linearGradient>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect x="18" y="38" width="324" height="44" rx="22" fill="url(#g)" filter="url(#s)"/>
+  <path d="M170 35c-18 8-28 18-28 28s10 20 28 28c18-8 28-18 28-28s-10-20-28-28z" fill="#F8FAFC" opacity="0.9"/>
+  <path d="M170 42c-12 6-18 12-18 21s6 15 18 21c12-6 18-12 18-21s-6-15-18-21z" fill="#111827" opacity="0.10"/>
+  <rect x="34" y="52" width="28" height="16" rx="8" fill="#111827" opacity="0.12"/>
+  <rect x="298" y="52" width="28" height="16" rx="8" fill="#111827" opacity="0.12"/>
+  <text x="180" y="73" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="18" fill="#111827" opacity="0.85">10級</text>
+</svg>
