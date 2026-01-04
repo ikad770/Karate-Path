@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  background: #f5f5f5;
+  color: #222;
+  text-align: center;
+}
+
+header {
+  background: #111;
+  color: #fff;
+  padding: 2rem;
+}
+
+.logo {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.hero-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.buttons {
+  margin: 2rem 0;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 1rem 2rem;
+  background: #d32f2f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #b71c1c;
+}
+
+.quiz, .terms {
+  padding: 2rem;
+  background: #fff;
+  margin: 2rem auto;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+footer {
+  background: #111;
+  color: #fff;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
