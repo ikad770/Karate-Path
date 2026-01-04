@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>Zenkutsu-dachi (Front stance) - simple icon</title>
+  <g fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M120 360h272" />
+    <path d="M180 360l48-80" />
+    <path d="M260 360l52-120" />
+    <path d="M312 240l86 0" />
+    <path d="M228 280l84 0" />
+    <path d="M228 280l-64 30" />
+    <circle cx="228" cy="186" r="26" />
+    <path d="M228 212l0 68" />
+  </g>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="80" viewBox="0 0 240 80">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e9e9e9"/>
+    </linearGradient>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1.2" stdDeviation="1.2" flood-color="#000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- belt body -->
+  <g filter="url(#s)">
+    <rect x="12" y="30" width="216" height="20" rx="9" fill="url(#g)"/>
+    <!-- subtle fabric highlights -->
+    <path d="M20 36 H220" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2" stroke-linecap="round"/>
+    <path d="M20 44 H220" stroke="#000" stroke-opacity="0.10" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- knot -->
+  <g filter="url(#s)">
+    <path d="M120 24
+             c-10 0-18 8-18 18s8 18 18 18 18-8 18-18-8-18-18-18z"
+          fill="#d9d9d9"/>
+    <path d="M120 28
+             c-7 0-12.5 5.5-12.5 12.5S113 53 120 53s12.5-5.5 12.5-12.5S127 28 120 28z"
+          fill="#f4f4f4" opacity="0.9"/>
+    <!-- tails -->
+    <path d="M110 44 l-14 24 c-1.1 2 0.3 4.5 2.6 4.5 h10 c1.2 0 2.3-.7 2.7-1.8 l6.7-20.2 z"
+          fill="#d9d9d9"/>
+    <path d="M130 44 l14 24 c1.1 2-0.3 4.5-2.6 4.5 h-10 c-1.2 0-2.3-.7-2.7-1.8 l-6.7-20.2 z"
+          fill="#d9d9d9"/>
+    <path d="M108 46 l-11 19 h8.5 l5.5-16.5z" fill="#f4f4f4" opacity="0.9"/>
+    <path d="M132 46 l11 19 h-8.5 l-5.5-16.5z" fill="#f4f4f4" opacity="0.9"/>
+  </g>
+</svg>

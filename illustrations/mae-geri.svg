@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <title>Mae-geri (Front kick)</title>
+  <g fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="96" cy="54" r="18"/>
+    <path d="M96 72v78"/>
+    <path d="M96 150l20 50"/>
+    <path d="M96 150l80-10"/>
+    <path d="M176 140l20-2"/>
+  </g>
+</svg>

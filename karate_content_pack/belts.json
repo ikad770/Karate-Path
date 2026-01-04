@@ -1,0 +1,106 @@
+[
+  {
+    "rank": "9th Kyu",
+    "color": "White",
+    "kata_required": [
+      "Heian Shodan"
+    ],
+    "meaning_he": "התחלה נקייה – בסיס, פתיחות ללמידה ומשמעת.",
+    "focus_he": [
+      "עמידות בסיס",
+      "קואורדינציה",
+      "דיוק"
+    ]
+  },
+  {
+    "rank": "8th Kyu",
+    "color": "Yellow",
+    "kata_required": [
+      "Heian Nidan"
+    ],
+    "meaning_he": "האור הראשון – מודעות, יציבות והבנה של קווים.",
+    "focus_he": [
+      "תזמון",
+      "מרחק",
+      "חזרות איכותיות"
+    ]
+  },
+  {
+    "rank": "7th Kyu",
+    "color": "Orange",
+    "kata_required": [
+      "Heian Sandan"
+    ],
+    "meaning_he": "צמיחה – חיבור בין ידיים לרגליים ועוצמה מבוקרת.",
+    "focus_he": [
+      "העברת משקל",
+      "מהירות־דיוק",
+      "קומבינציות"
+    ]
+  },
+  {
+    "rank": "6th Kyu",
+    "color": "Green",
+    "kata_required": [
+      "Heian Yondan"
+    ],
+    "meaning_he": "התפתחות – איזון, שליטה ונשימה.",
+    "focus_he": [
+      "איזון",
+      "נשימה",
+      "קצב"
+    ]
+  },
+  {
+    "rank": "5th Kyu",
+    "color": "Purple",
+    "kata_required": [
+      "Heian Godan"
+    ],
+    "meaning_he": "ליטוש – חדות, טכניקה נקייה ויציבות מנטלית.",
+    "focus_he": [
+      "חדות",
+      "דיוק",
+      "שליטה"
+    ]
+  },
+  {
+    "rank": "4th Kyu",
+    "color": "Purple",
+    "kata_required": [
+      "Tekki Shodan"
+    ],
+    "meaning_he": "שורשיות – כוח ממרכז הגוף ועמידה חזקה.",
+    "focus_he": [
+      "קימה דאצ׳י",
+      "מרכז גוף",
+      "כוח"
+    ]
+  },
+  {
+    "rank": "3rd Kyu",
+    "color": "Brown",
+    "kata_required": [
+      "Bassai Dai"
+    ],
+    "meaning_he": "בשלות – אסרטיביות, שבירת מחסומים וביטחון.",
+    "focus_he": [
+      "עוצמה",
+      "רצף",
+      "מיקוד"
+    ]
+  },
+  {
+    "rank": "2nd Kyu",
+    "color": "Brown",
+    "kata_required": [
+      "Bassai Dai"
+    ],
+    "meaning_he": "שליטה מתקדמת – דיוק תחת לחץ ורוח לחימה.",
+    "focus_he": [
+      "לחץ",
+      "תזמון",
+      "אסטרטגיה"
+    ]
+  }
+]

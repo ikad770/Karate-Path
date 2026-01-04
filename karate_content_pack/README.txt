@@ -1,0 +1,1 @@
+Upload this folder NEXT TO index.html and assets. Do not rename.

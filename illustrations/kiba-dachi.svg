@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>Kiba-dachi (Horse stance) - simple icon</title>
+  <g fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M96 364h320" />
+    <path d="M224 364l-82-92" />
+    <path d="M256 364l0-128" />
+    <path d="M288 364l82-92" />
+    <circle cx="256" cy="156" r="26" />
+    <path d="M256 182v54" />
+    <path d="M180 236h152" />
+  </g>
+</svg>

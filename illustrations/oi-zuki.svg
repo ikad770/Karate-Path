@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <title>Oi-zuki (Lunge punch)</title>
+  <g fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="90" cy="60" r="18"/>
+    <path d="M90 78v70"/>
+    <path d="M90 110l-40 28"/>
+    <path d="M90 110l85-22"/>
+    <circle cx="190" cy="84" r="16"/>
+  </g>
+</svg>
